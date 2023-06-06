@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
-for i in range(122, 96, -1):
-    print("{:c}".format(i if i % 2 == 0 else i - 32), end="")
-print("")
+"""Print the alphabet in reverse order alternating uppercase and lowercase."""
+
+for c in range(ord('z'), ord('a') - 1, -1):
+    if (ord('z') - c) % 2 == 0:
+        print(chr(c), end="")
+    else:
+        print(chr(c).upper(), end="")
