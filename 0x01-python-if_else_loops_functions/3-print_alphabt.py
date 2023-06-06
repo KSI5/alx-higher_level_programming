@@ -2,6 +2,8 @@
 
 alphabet = ""
 for letter in range(ord('a'), ord('z')+1):
-    alphabet += chr(letter)
+    if chr(letter) not in 'eq':
+        alphabet += chr(letter)
 
 print("{}".format(alphabet), end="")
+
