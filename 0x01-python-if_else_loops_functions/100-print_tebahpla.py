@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 
-"""Print the alphabet in reverse order alternating uppercase and lowercase."""
-
+""""Will print the alphabet in reverse order alternating upper- and lower-case."""
+i = 0
 for c in range(ord('z'), ord('a') - 1, -1):
-    if (ord('z') - c) % 2 == 0:
-        print(chr(c), end="")
-    else:
-        print(chr(c).upper(), end="")
+    print("{}".format(chr(c - i)), end="")
+    i = 32 if i == 0 else 0
