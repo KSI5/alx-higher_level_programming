@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stddef.h>
 /**
  * is_palindrome - Checks if a singly linked list is a palindrome.
  * @head: A pointer to the head of the linked list.
