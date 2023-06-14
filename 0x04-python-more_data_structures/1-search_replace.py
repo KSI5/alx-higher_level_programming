@@ -12,5 +12,5 @@ def search_replace(my_list, search, replace):
     Returns:
         list: A new list where all occurrences of the search element are replaced.
     """
-    new_list = list(map(lambda x: replace if x == search else x, my_list))
+    new_list = [replace if x == search else x for x in my_list]
     return new_list
