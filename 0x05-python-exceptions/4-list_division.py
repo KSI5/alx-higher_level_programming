@@ -5,4 +5,4 @@ def raise_exception_msg(message=""):
         raise NameError(message)
     except NameError as e:
         print("An error occurred:", str(e))
-        raise
+        return
