@@ -1,27 +1,24 @@
 #!/usr/bin/python3
 
-import sys
+def magic_calculation(a, b):
+    # Initialize the result variable
+    result = 0
 
+    # Iterate from 1 to 3
+    for i in range(1, 3):
+        try:
+            # Check if i is greater than a
+            if i > a:
+                # Raise an exception with the message 'Too far'
+                raise Exception('Too far')
+            else:
+                # Calculate the intermediate result
+                result += a ** b / i
+        except:
+            # If an exception occurs, set the result to b + a
+            result = b + a
+            # Exit the loop
+            break
 
-def safe_print_division(a, b):
-    """Divide two integers and print the result.
-
-    Args:
-        a (int): The numerator.
-        b (int): The denominator.
-
-    Returns:
-        float: The result of the division.
-            Returns None if a zero division error
-            occurs or any other exception happens.
-    """
-    try:
-        result = a / b
-        print("Inside result: {:.1f}".format(result))
-        return result
-    except ZeroDivisionError:
-        print("Exception: division by zero", file=sys.stderr)
-        return None
-    except Exception as e:
-        print("Exception: {}".format(e), file=sys.stderr)
-        return None
+    # Return the final result
+    return result
