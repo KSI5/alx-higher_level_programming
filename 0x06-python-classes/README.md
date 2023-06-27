@@ -21,3 +21,18 @@ The Square class is further improved with the addition of a private instance att
 
 **5-square.py:** 
 In this task, the Square class gains a public instance method `my_print()` that prints a square using the '#' character. The method takes into account the size and position of the square.
+
+**6-square.py**
+Updates the Square class with additional functionality: square instance can answer to comparators: ==, !=, >, >=, <, and <= based on the square area.
+
+**100-singly_linked_list.py**
+Defines a class Node that represents a node in a singly-linked list. It also defines a class SinglyLinkedList that represents a singly-linked list.
+
+**101-square.py**
+Updates the Square class from 6-square.py with a new private instance attribute position. It also updates the my_print() method to print the square with the # character using the position attribute.
+
+**102-square.py**
+Updates the Square class with a new method __repr__() to provide a string representation of the square for debugging purposes.
+
+**103-magic_class.py**
+Defines a class MagicClass that represents a circle. It has methods to calculate the area and circumference of the circle.
