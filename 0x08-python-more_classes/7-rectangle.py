@@ -110,12 +110,3 @@ class Rectangle:
             A new Rectangle instance with equal width and height.
         """
         return cls(size, size)
-
-    @property
-    def print_symbol(self):
-        """Get/set the symbol used for representation of the Rectangle."""
-        return self.__class__.print_symbol
-
-    @print_symbol.setter
-    def print_symbol(self, value):
-        self.__class__.print_symbol = value
