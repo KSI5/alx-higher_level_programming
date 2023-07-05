@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def matrix_divided(matrix, div):
     # Validate matrix
     if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
