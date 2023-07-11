@@ -1,12 +1,15 @@
 #!/usr/bin/python3
+"""Defines a file-writing function."""
 
-def read_file(filename=""):
-    """
-    Reads a text file (UTF8) and prints its content to stdout.
+
+def write_file(filename="", text=""):
+    """Write a string to a UTF8 text file.
 
     Args:
-        filename (str): The name of the file to be read. Defaults to an empty string.
+        filename (str): The name of the file to write.
+        text (str): The text to write to the file.
+    Returns:
+        The number of characters written.
     """
-    with open(filename, encoding="utf-8") as file:
-        for line in file:
-            print(line, end="")
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
