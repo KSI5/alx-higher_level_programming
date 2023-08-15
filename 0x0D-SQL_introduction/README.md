@@ -50,3 +50,22 @@ This file consists of the introduction to the basics of SQL (Structured Query La
 16. **Say My Name**
     Write an SQL script that lists records with scores and names, excluding rows without names.
 
+
+## Advanced Tasks
+
+17. **Move to UTF8**
+    Write an SQL script that converts the `hbtn_0c_0` database to UTF8 (utf8mb4, collate utf8mb4_unicode_ci) in your MySQL server. Convert the follow    ing:
+
+    - Database: `hbtn_0c_0`
+    - Table: `first_table`
+    - Field: `name` in `first_table
+
+18. **101. Average Temperatures**
+    Write an SQL script that displays the average temperature (Fahrenheit) by city, ordered by temperature in descending order.
+
+19. **Top City**
+    Write an SQL script that displays the number of students with the same score for each score, in descending order.
+
+20. **Average Temperatures**
+    Write an SQL script that displays the maximum temperature of each state, ordered by state name.
+
