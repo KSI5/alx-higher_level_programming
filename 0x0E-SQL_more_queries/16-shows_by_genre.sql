@@ -1,9 +1,11 @@
--- List Shows with Genres
--- Execute: cat 16-shows_by_genre.sql | mysql -hlocalhost -uroot -p hbtn_0d_tvshows
+-- Lists all shows and genres linked to the show from the
+-- database hbtn_0d_tvshows.
+-- Records are ordered by ascending show title and genre name.
+SELECT ts.`title`, tg.`name`
+  FROM `tv_shows` AS ts
+       LEFT JOIN `tv_show_genres` AS tsg
+       ON ts.`id` = tsg.`show_id`
 
-SELECT tvshow.`title`, IFNULL(GROUP_CONCAT(genre.`name` ORDER BY genre.`name` ASC SEPARATOR ', '), 'NULL') AS genre
-FROM tv_shows AS tvshow
-LEFT JOIN tv_show_genres AS show_genre ON tvshow.`id` = show_genre.`show_id`
-LEFT JOIN tv_genres AS genre ON show_genre.`genre_id` = genre.`id`
-GROUP BY tvshow.`title`
-ORDER BY tvshow.`title` ASC, genre ASC;
+       LEFT JOIN `tv_genres` AS tg
+       ON tsg.`genre_id` = tg.`id`
+ ORDER BY ts.`title`, tg.`name`;
