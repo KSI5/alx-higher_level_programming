@@ -55,6 +55,18 @@ Write a script that lists all shows and genres linked to each show in the databa
 Write a script that lists all shows and genres linked to each show in the database hbtn_0d_tvshows.
 
 
-#Advanced Tasks
+#**Advanced Tasks**
+
+100-not_my_genres.sql
+Description: Lists all shows from the database hbtn_0d_tvshows that do not have the genre Comedy linked. The records are sorted in ascending order by the show title.
+
+101-not_a_comedy.sql
+Description: Lists all shows from the database hbtn_0d_tvshows_rate that are not of the genre Comedy. The records are sorted in ascending order by the show title.
+
+102-rating_shows.sql
+Description: Lists all shows from the database hbtn_0d_tvshows_rate along with their total rating sum. The records are ordered by descending rating sum.
+
+103-rating_genres.sql
+Description: Lists all genres in the database hbtn_0d_tvshows_rate along with their average rating. The records are ordered by descending average rating.
 
 
