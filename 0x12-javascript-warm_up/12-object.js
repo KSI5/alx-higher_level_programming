@@ -10,4 +10,3 @@ console.log(myObject);
 // Update the value property to 89
 myObject.value = 89;
 console.log(myObject);
-
