@@ -1,13 +1,13 @@
 #!/usr/bin/node
-/* Update this script by adding a new function
- * incr that increments the integer value. */
+// Define a new function named "incr" that increases the integer value by one.
+
 const myObject = {
-	  type: 'object',
-	  value: 12
+  type: 'object',
+  value: 12
 };
 console.log(myObject);
 myObject.incr = function () {
-	  this.value++;
+  myObject.value++;
 };
 myObject.incr();
 console.log(myObject);
