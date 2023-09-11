@@ -1,5 +1,6 @@
 #!/usr/bin/node
-// Increment a value and invoke a function.
+// executes x times a function.
  exports.addMeMaybe = function (number, theFunction) {
-   return theFunction(number += 1);
-   };
+   number++;
+     theFunction(number);
+     };
