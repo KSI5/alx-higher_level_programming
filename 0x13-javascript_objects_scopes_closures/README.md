@@ -69,7 +69,7 @@ Prototypes for functions written in this project:
 Description: This JavaScript module exports a function named converter that converts a number from base 10 to another base specified as an argument. The module does not import any external files, and it does not declare any new variables using var, let, or const. The converter function takes a single argument, base, which represents the target base for the conversion. The function converts a decimal number to the specified base and returns the result as a string.
 
 
-###  Advanced Tasks :Biceps:
+###  Advanced Tasks :Mattock_tool:
 
 
 ### Task 100: Map with JavaScript (100-map.js)
