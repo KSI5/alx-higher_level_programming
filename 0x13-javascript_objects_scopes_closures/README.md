@@ -1,6 +1,6 @@
-This README file contains descriptions for the 0x13-javascript_objects_scopes_closures tasks.
 
-#### 0x13-javascript_objects_scopes_closures
+
+# 0x13-javascript_objects_scopes_closures
 
 
 ## Tests 
@@ -19,10 +19,10 @@ Prototypes for functions written in this project:
 | `10-converter.js`  | `exports.converter = function (base)`                   |
 
 
+## Mandatory Tasks 📌
+
+
 ## Tasks Descriptions :page_with_curl:
-
-
-
 
 ### Task 0: Empty Rectangle Class (0-rectangle.js)
 
