@@ -5,7 +5,7 @@ This README file contains descriptions for the 0x13-javascript_objects_scopes_cl
 
 ## Tests 
 
-* [tests](./tests): Folder of test files. Provided by Holberton School.
+* [tests](./tests): Folder of test files. Provided by ALX.
 
 ## Function Prototypes :open_book:
 
@@ -65,6 +65,21 @@ Prototypes for functions written in this project:
 
 - **Description:** This task involves creating a JavaScript function `logMe` that prints the number of arguments already printed and the new argument value in a specific format. The function should keep track of the number of arguments printed across multiple function calls.
 
-### Task 10: Temperature Converter (10-converter.js)
+### Task 10: Base Converter (10-converter.js)
+Description: This JavaScript module exports a function named converter that converts a number from base 10 to another base specified as an argument. The module does not import any external files, and it does not declare any new variables using var, let, or const. The converter function takes a single argument, base, which represents the target base for the conversion. The function converts a decimal number to the specified base and returns the result as a string.
 
-- **Description:** Implement a JavaScript module that exports functions for converting temperatures between Celsius and Fahrenheit. The module should include functions ctof(celsius) to convert Celsius to Fahrenheit and ftoc(fahrenheit) to convert Fahrenheit to Celsius. These functions should accept numeric temperature values and return the converted temperature values.
+
+###  Advanced Tasks :Biceps:
+
+
+### Task 100: Map with JavaScript (100-map.js)
+
+- **Description:** This JavaScript script demonstrates the use of the `map` method to create a new array by applying a function to each element of an existing array. It imports an array from an external module, applies the `map` method to double each element of the array, and then prints both the original and new arrays.
+
+### Task 101: Sorted Occurrences (101-sorted.js)
+
+- **Description:** This JavaScript script imports a dictionary of occurrences by user id from an external module and computes a new dictionary of user ids by occurrence. In the new dictionary, the keys represent the number of occurrences, and the values are lists of user ids. The script prints the new dictionary as output.
+
+### Task 102: Concatenate Files (102-concat.js)
+
+- **Description:** This Node.js script concatenates the content of two source files and writes the result to a destination file. It takes three command-line arguments: the file paths of two source files and the file path of the destination file. The script reads the content of the source files, concatenates them, and then writes the concatenated data to the destination file.
