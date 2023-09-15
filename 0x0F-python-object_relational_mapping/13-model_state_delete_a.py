@@ -1,41 +1,27 @@
 #!/usr/bin/python3
 """
-Script that deletes State objects with a name containing the letter 'a'
-from the database hbtn_0e_6_usa
+Script that deletes all State objects with a name containing
+the letter a from the database
+Using module SQLAlchemy
 """
+
+from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from model_state import Base, State
 from sys import argv
 
 if __name__ == "__main__":
-    # Check if all three arguments are provided
-    if len(argv) != 4:
-        print("Usage: {} <mysql_username> <mysql_password> <database_name>".format(argv[0]))
-        exit(1)
-
-    # Extract the arguments
-    mysql_username = argv[1]
-    mysql_password = argv[2]
-    database_name = argv[3]
-
-    # Create a connection to the MySQL database
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
-        mysql_username, mysql_password, database_name))
-
-    # Create a configured "Session" class
+    # create an engine
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
+        argv[1], argv[2], argv[3]), pool_pre_ping=True)
+    # create a configured "Session" class
     Session = sessionmaker(bind=engine)
-
-    # Create a Session
+    # create a Session
     session = Session()
-
-    # Query and delete State objects with names containing 'a'
-    states_to_delete = session.query(State).filter(State.name.like('%a%')).all()
-    for state in states_to_delete:
-        session.delete(state)
-
-    # Commit the changes to the database
+    Base.metadata.create_all(engine)
+    state_del = session.query(State).filter(State.name.like('%a%')).all()
+    for delete in state_del:
+        session.delete(delete)
+    # commit and close session
     session.commit()
-
-    # Close the session
     session.close()
