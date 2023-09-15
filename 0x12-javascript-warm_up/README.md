@@ -1,6 +1,6 @@
 This README file contains descriptions of the 0x12-javascript-warm_up tasks.
 
-#0x12-javascript-warm_up
+### 0x12-javascript-warm_up
 
 
 
@@ -86,4 +86,37 @@ This README file contains descriptions of the 0x12-javascript-warm_up tasks.
   - The name of the function must be `converter`.
   - Do not use `var`.
 
-These tasks cover a range of JavaScript concepts and challenges, including working with command-line arguments, functions, loops, and more.
+
+
+### Advanced Tasks
+
+Certainly! Here are the updated task descriptions for the advanced tasks in the 0x12-javascript-warm_up project based on the files you mentioned:
+
+**Task #14: Const or not const**
+- **Objective:** Examine JavaScript code and determine whether `const` or `let` should be used for variable declarations.
+- **Requirements:**
+  - Analyze the provided JavaScript code and identify which variables should be declared using `const` and which ones should use `let`.
+  - Provide explanations for your choices.
+  - No code implementation is required for this task.
+
+**Task #15: Call me Moby**
+- **Objective:** Create a JavaScript function that executes a given function a specified number of times.
+- **Requirements:**
+  - Create a JavaScript function named `callMeMoby(x, theFunction)` that executes `theFunction` `x` times.
+  - The function must be visible from outside.
+  - You are not allowed to use the `var` keyword.
+
+**Task #16: Add me maybe**
+- **Objective:** Create a JavaScript function that increments a number and then calls another function with the incremented value.
+- **Requirements:**
+  - Create a JavaScript function named `executeIncrement(number, theFunction)` that increments `number` and calls `theFunction` with the incremented value.
+  - The function must be visible from outside.
+  - You are not allowed to use the `var` keyword.
+
+**Task #17: Increment object**
+- **Objective:** Modify a JavaScript object by incrementing its `value` property.
+- **Requirements:**
+  - Modify the provided JavaScript object by updating its `value` property to increment it to a specified value.
+  - No code implementation is required for this task; only update the `value` property of the object.
+
+
