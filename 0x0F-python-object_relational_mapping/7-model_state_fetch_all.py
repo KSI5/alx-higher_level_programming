@@ -1,39 +1,25 @@
 #!/usr/bin/python3
 """
-Script that lists all State objects from the database hbtn_0e_6_usa
+Script that lists all State objects from the database - Using module SQLAlchemy
 """
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 from sys import argv
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
-    # Check if all three arguments are provided
-    if len(argv) != 4:
-        print("Usage: {} <mysql_username> <mysql_password> <database_name>".format(argv[0]))
-        exit(1)
 
-    # Extract the arguments
-    mysql_username = argv[1]
-    mysql_password = argv[2]
-    database_name = argv[3]
+    # create an engine
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
+        argv[1], argv[2], argv[3]), pool_pre_ping=True)
 
-    # Create a connection to the MySQL database
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
-        mysql_username, mysql_password, database_name))
-
-    # Create a configured "Session" class
+    # create a configured "Session" class
     Session = sessionmaker(bind=engine)
-
-    # Create a Session
+    # create a Session
     session = Session()
+    Base.metadata.create_all(engine)
 
-    # Query all State objects and order them by states.id
-    states = session.query(State).order_by(State.id).all()
-
-    # Display the results
-    for state in states:
+    s_tate = session.query(State).order_by(State.id).all()
+    for state in s_tate:
         print("{}: {}".format(state.id, state.name))
-
-    # Close the session
     session.close()
