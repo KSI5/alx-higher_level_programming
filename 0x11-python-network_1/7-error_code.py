@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-A Python script that takes a URL as input, sends a GET request to the URL using the requests package,
+A Python script that takes a URL as input, sends a GET request
+to the URL using the requests package,
 and displays the body of the response.
 
 Requirements:
