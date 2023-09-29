@@ -4,11 +4,10 @@ A Python script that fetches https://alx-intranet.hbtn.io/status
 and displays information about the response.
 """
 
-import sys
 import urllib.request
 
 if __name__ == "__main__":
-    url = sys.argv[1]
+    url = "https://alx-intranet.hbtn.io/status"
 
     request = urllib.request.Request(url)
     with urllib.request.urlopen(request) as response:
