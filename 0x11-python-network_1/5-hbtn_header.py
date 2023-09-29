@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-A Python script that takes a URL as input, sends a GET request to the URL
-and displays the value of the 'X-Request-Id' variable found in the response header.
+A Python script that takes a URL as input, sends
+a GET request to the URL and displays the value of the
+'X-Request-Id' variable found in the response header.
 
 Requirements:
 - You must use the package 'requests'.
